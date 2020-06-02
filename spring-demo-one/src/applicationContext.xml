@@ -29,7 +29,7 @@
 		class="com.luv2code.springdemo.CricketCoach">
 		
 		<!-- setup our setter injection -->
-		<property name="fortuneService" ref=myFortuneService""></property>
+		<property name="fortuneService" ref="myFortuneService"></property>
 	</bean>
 </beans>
 
