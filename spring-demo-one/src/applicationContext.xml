@@ -21,8 +21,15 @@
     <bean id="myCoach"
 		class="com.luv2code.springdemo.TrackCoach"> 
 		
-		<!-- define the dependency -->
+		<!-- setup constructor injection -->
 		<constructor-arg ref="myFortune"/>
+	</bean>
+	
+	<bean id="myCricketCoach"
+		class="com.luv2code.springdemo.CricketCoach">
+		
+		<!-- setup our setter injection -->
+		<property name="fortuneService" ref=myFortuneService""></property>
 	</bean>
 </beans>
 
